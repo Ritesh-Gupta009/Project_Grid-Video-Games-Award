@@ -1,0 +1,542 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+/* ........nav start...  */
+.nav
+{
+    height: 100px;
+    background:#434343;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav .cname
+{
+    border: 1px solid white;
+    /* background-color: blue; */
+    height: 100px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .cname a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nav .cname h1
+{
+ color: white;
+ font-size: 45px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav .cname span
+{
+    color:#0099e5;
+}
+
+.nav .menu
+{
+ height: 100px;
+ /* background: lightblue; */
+ display: flex;
+ justify-content: center;
+ /* text-align: center; */
+ align-items: center;
+}
+
+.nav .menu ul li
+{
+    display: inline;
+    /* display: none; */
+    margin-right: 20px;
+}
+
+.nav .menu ul li span
+{
+  color: #0099e5;
+}
+
+.nav .menu ul li a
+{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    transition: 0s;
+}
+.nav .menu ul li a:hover
+{
+    color: #0099e5;
+    transition: 0.5s;
+}
+/* .....nav end...  */
+
+/* ......header start... */
+
+.header
+{
+    height: 500px;
+    display: grid;
+    grid-template-rows: 150px 350px;
+    /* background: #0099e5; */
+}
+
+.header .nomi
+{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header .icon
+{
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+} 
+.header .icon .a
+{
+  height: 300px;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 20px 300px;
+  position: absolute;
+}
+
+.header .icon .b
+{
+  height: 300px;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 20px 200px;
+  left: 300px;
+  position: absolute;
+}
+
+.header .icon .c
+{
+  height: 300px;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 20px 200px;
+  left: 500px;
+  position: absolute;
+}
+
+.header .icon .d
+{
+  height: 300px;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 20px 200px;
+  position: absolute;
+  left: 700px;
+}
+
+/* ......header end... */
+
+/* ......content start... */
+
+.content
+{
+ height: 400px;
+ width: 80%;
+ /* background-color:lightslategray; */
+ margin: 40px auto;
+ display: grid;
+ grid-template-columns: 6fr 4fr;
+ 
+}
+
+.content .left
+{
+  /* background: lightskyblue; */
+  display: grid;
+  grid-template-rows: 6fr 4fr;
+  grid-gap: 20px 20px;
+}
+
+.content .left .up
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background: yellow; */
+    grid-gap: 35px;
+    font-size: 40px;
+    font-family: Impact, Haettens   chweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.content .left .up .imag1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/ab1.jpg);
+    background-size: 100% 100%;
+}
+.content .left .up .imag1 span
+{
+    z-index: -1;
+}
+
+.content .left .up .imag1:hover
+{
+    z-index: 1;
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.content .left .up .imag2
+{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/ab2.jpg);
+    background-size: 100% 100%;
+}
+.content .left .up .imag2 span
+{
+    z-index: -1;
+}
+
+.content .left .up .imag2:hover
+{
+    z-index:1;
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.content .left .down
+{
+    /* background-color: blue; */
+    padding-top: 20px;
+    padding-left: 20px;
+  
+}
+
+.content .left .down span
+{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 300px;
+    color: black;
+    
+}
+
+.content .left .down button
+{
+    height: 40px;
+    width: 130px;
+    justify-content: space-between;
+    border: 2px solid white;
+    background: #434343;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content .left .down button:hover
+{
+    background: #337ab7;
+    border: none;
+}
+
+.content .right
+{  
+    /* height: 400px; */
+    
+    display: flex;  
+    justify-content: center;
+    align-items: center;  
+    /* background: lightseagreen; */
+    margin:0px 80px;
+    background-image: url(../image/ab3.jpg); 
+    background-size: 100% 100%;
+    font-size: 50px;
+    font-family: Impact, Haettens   chweiler, 'Arial Narrow Bold', sans-serif;
+    color: white; 
+}
+
+.content .right span
+{
+    z-index: -1;
+}
+
+.content .right:hover
+{
+    z-index: 1;
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+/* ......content end....... */
+
+/* .......conten_event start.... */
+.content_event
+{
+    height: 370px;
+    width: 80%;
+    /* background: yellow;   */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid black; */
+    margin: 40px auto;
+
+}
+.content_event .video
+{
+    height: 370px;
+    width: 100%;
+}
+
+.video_data h2
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 20px;
+}
+
+.video_data ul
+{
+    list-style: none;
+}
+.video_data ul li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 32px;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.video_data ul li:before
+{
+    content: '\003E';
+    margin-left: 10px;
+}
+
+.video_data ul li a:hover
+{
+    color: #0099e5;
+}
+
+/* ....content event end.... */
+
+/* ....Participate start.... */
+
+.participate
+{
+   height: 60px;
+   width: 80%;
+   background-color: lightsalmon;
+   /* margin: 40px auto; */
+   margin: 40px auto ;
+   padding: 10px 10px;
+ 
+}
+
+.participate button
+{
+    height: 35px;
+    width: 100px;
+    margin-right: 10px;
+    background: white;
+    border: none;
+}
+
+.participate span .first
+{
+    background-color: #0099e5;
+}
+span .first:hover
+{
+    background-color: white;
+}
+
+
+/* ....Participate end.... */
+
+/* ....gaming start.... */
+
+.gaming
+{
+    height: 500px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: lightslategray;
+    margin: 40px auto;
+}
+
+.gaming .x
+{
+    height: 500px;
+    background-image: url(../image/ta.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gaming .x button
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    z-index: -2;
+    position: relative;  
+}
+.gaming .x .search
+
+{
+    background-color: black;
+    color: white;
+}
+
+.gaming .x:hover
+{
+    z-index:1 ;
+    filter: saturate(300%);
+}
+
+.gaming .a
+{
+  background-image: url(../image/ta1.jpg);
+}
+
+.gaming .b
+{
+    background-image: url(../image/ta2.jpg);
+} 
+
+
+/* .....gaming end... */
+
+/* .....footer start.... */
+.footer
+{
+    height: 350px;
+    width: 80%;
+    background: #434343;
+    display: grid;
+    /* grid-template-rows:150px 100px 100px; */
+    margin: 40px auto;
+}
+
+.footer .symbol
+{
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.footer .symbol .p a
+{
+    text-decoration: none;
+}
+.footer .symbol .p
+{
+    background-color: yellow;
+    border: 1px solid;
+}
+
+.footer .symbol .q
+{
+    background-color: lightseagreen;
+}
+
+.fa-square-twitter
+{
+   font-size: 50px;
+   color: #0099e5;
+}
+.fa-youtube
+{
+    font-size: 50px;
+}
+.fa-square-facebook
+{
+    font-size: 50px;
+}
+
+
+
+.footer .symbol span
+{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer .menubar
+{
+    background-color: lightcoral;
+}
+
+.footer .notice
+
+{
+    background-color: lightgreen;
+}
+
+.footer .symbol .p
+{
+   padding: 20px 100px;
+}
+
+.footer .menubar
+{
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.footer .menubar ul li
+{
+    display: inline;
+    
+    margin-right: 40px;
+}
+
+.footer .menubar ul li span
+{
+  color: #0099e5;
+}
+
+.footer .menubar ul li a
+{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    transition: 0s;
+}
+.footer .menubar ul li a:hover
+{
+    color: #0099e5;
+    transition: 0.5s;
+}
+
+.footer .notice
+{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

@@ -1,0 +1,110 @@
+@media(max-width:600px)
+{
+
+    .nav
+    {
+        grid-template-columns: 1fr;
+    }
+    .nav .menu ul li
+    {
+        display: none;
+    } 
+
+
+    .header
+    {
+    grid-template-columns: 1fr;  
+    }
+
+
+    .header .icon .a
+    {
+        height: 200px;
+        width: 30%;
+    top: 70px;
+    right: 80px;
+
+    }
+
+    .header .icon .b
+    {
+        height: 200px;
+        width: 30%;
+        top: 70px;
+        left: -70px;
+
+    }
+
+    .header .icon .c
+    {
+        height: 200px;
+        width: 30%;
+        top: 70px;
+        left:50px;
+    }
+    .header .icon .d
+    {
+        height: 200px;
+        width: 30%;
+        top: 70px;
+        left: 180px;
+    } 
+
+    .content
+    {
+        grid-template-columns: 1fr;
+        height: 750px;
+    }
+    .content .left .down span
+    {
+        font-size: 35px;
+    }
+    .content .left .down button
+    {
+        margin-left: 250px;
+    }
+
+    .content .right
+    {
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .content_event
+    {
+        grid-template-columns: 1fr;
+    }
+    .video_data ul li a
+    {
+        line-height:25px;
+    }
+    .video_data h2
+    {
+        font-size: 23px;
+    }
+
+    .participate
+    {
+        grid-template-columns: 1fr;
+        margin-top: 530px;
+    }
+    .gaming
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* height: 100px; */
+        height: 200px;
+        width: 80%;
+    }
+    .gaming .x
+    {
+        height: 200px;
+    }
+
+    .footer .symbol
+    {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
